@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: green;
 }
 /* line 22, ../sass/partials/_module.scss */
-.module-lineup figure img {
+.module-lineup figure svg {
   height: 300px;
 }
 /* line 26, ../sass/partials/_module.scss */
