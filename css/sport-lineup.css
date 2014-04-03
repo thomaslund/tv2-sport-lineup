@@ -1,0 +1,197 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_module.scss */
+.module-lineup {
+  font-family: "flama", sans-serif;
+  padding: 30px;
+}
+/* line 5, ../sass/partials/_module.scss */
+.module-lineup figure {
+  position: relative;
+  background-color: green;
+}
+/* line 9, ../sass/partials/_module.scss */
+.module-lineup figure img {
+  height: 300px;
+}
+/* line 13, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+/* line 20, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-inactive {
+  display: none;
+}
+@media (min-width: 600px) {
+  /* line 13, ../sass/partials/_module.scss */
+  .module-lineup figure section.lineup-field {
+    width: 50%;
+  }
+  /* line 27, ../sass/partials/_module.scss */
+  .module-lineup figure section.lineup-field.lineup-inactive {
+    display: block;
+  }
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-3 ul {
+  width: 33.33333%;
+  text-align: center;
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-4 ul {
+  width: 25%;
+  text-align: center;
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-5 ul {
+  width: 20%;
+  text-align: center;
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-6 ul {
+  width: 16.66667%;
+  text-align: center;
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-7 ul {
+  width: 14.28571%;
+  text-align: center;
+}
+/* line 34, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-rows-8 ul {
+  width: 12.5%;
+  text-align: center;
+}
+/* line 42, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-home {
+  left: 0px;
+}
+/* line 45, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-home ul {
+  float: left;
+}
+/* line 49, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-away {
+  right: 0px;
+}
+@media (min-width: 600px) {
+  /* line 53, ../sass/partials/_module.scss */
+  .module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul > li {
+    float: right;
+  }
+}
+/* line 60, ../sass/partials/_module.scss */
+.module-lineup figure ul {
+  position: relative;
+  top: 50%;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 70, ../sass/partials/_module.scss */
+.module-lineup figure ul li {
+  text-align: center;
+  margin: 5px 0;
+  width: 100%;
+}
+/* line 75, ../sass/partials/_module.scss */
+.module-lineup figure ul li a {
+  width: 30px;
+  padding: 7px;
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+}
+/* line 88, ../sass/partials/_module.scss */
+.module-lineup nav .lineup-inactive {
+  background: #cccccc;
+}
+/* line 93, ../sass/partials/_module.scss */
+.module-lineup .lineup-table h3 {
+  margin: 5px 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 99, ../sass/partials/_module.scss */
+  .module-lineup .lineup-table.c4 {
+    width: 100%;
+  }
+  /* line 102, ../sass/partials/_module.scss */
+  .module-lineup .lineup-table.lineup-inactive {
+    display: none;
+  }
+  /* line 105, ../sass/partials/_module.scss */
+  .module-lineup .lineup-table.lineup-active {
+    display: block;
+  }
+}

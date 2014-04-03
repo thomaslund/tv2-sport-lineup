@@ -1,0 +1,112 @@
+.module-lineup{
+	font-family: 'flama', sans-serif;
+	padding: 30px;
+
+	figure{
+		position: relative;
+		background-color: green;
+
+		img{
+			height: 300px; //temp before we haz svg
+		}
+
+		section.lineup-field{
+			position: absolute;
+			
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			
+			&.lineup-inactive{
+				display: none;
+			}
+
+			@media (min-width: 600px){
+				width: 50%;
+
+				&.lineup-inactive{
+					display: block;
+				}
+			}
+
+			@for $i from 3 through 8{
+
+				&.lineup-rows-#{$i} ul{
+					width: percentage(1/$i);
+					text-align: center;
+				}
+
+			}
+
+		}
+		#lineup-field-home{
+			left: 0px; 
+
+			ul{
+				float:left;
+			}
+		}
+		#lineup-field-away{
+			right: 0px;
+
+			@media (min-width: 600px){
+				ul, ul > li{
+					float: right;
+				}
+			}
+		}
+
+
+		ul{
+			
+			position: relative;
+			top: 50%;
+			bottom: 0;
+
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+
+			li {
+				text-align: center;
+				margin: 5px 0;
+				width: 100%;
+
+				a{
+					width: 30px;
+					padding: 7px;
+					display: block;
+					background-color: white;
+					border-radius: 20px;
+				}	
+				
+			}
+		}
+
+	}
+
+	nav .lineup-inactive{
+		background: darken(#fff,20%);
+	}
+
+	.lineup-table{
+		h3{
+			margin: 5px 0;
+		}
+	}
+
+	@media screen and (max-width: 600px){
+		.lineup-table.c4{
+			width: 100%;
+		}
+		.lineup-table.lineup-inactive{
+			display: none;
+		}
+		.lineup-table.lineup-active{
+			display:block;
+		}
+	}
+	
+
+
+}
