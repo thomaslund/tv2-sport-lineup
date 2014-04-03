@@ -68,89 +68,105 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../sass/partials/_module.scss */
+.clearfix, .module-lineup figure ul li {
+  zoom: 1;
+}
+/* line 3, ../sass/partials/_module.scss */
+.clearfix:before, .module-lineup figure ul li:before, .clearfix:after, .module-lineup figure ul li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 9, ../sass/partials/_module.scss */
+.clearfix:after, .module-lineup figure ul li:after {
+  clear: both;
+}
+
+/* line 14, ../sass/partials/_module.scss */
 .module-lineup {
   font-family: "flama", sans-serif;
   padding: 30px;
 }
-/* line 5, ../sass/partials/_module.scss */
+/* line 18, ../sass/partials/_module.scss */
 .module-lineup figure {
   position: relative;
   background-color: green;
 }
-/* line 9, ../sass/partials/_module.scss */
+/* line 22, ../sass/partials/_module.scss */
 .module-lineup figure img {
   height: 300px;
 }
-/* line 13, ../sass/partials/_module.scss */
+/* line 26, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field {
   position: absolute;
   top: 0px;
   height: 100%;
   width: 100%;
 }
-/* line 20, ../sass/partials/_module.scss */
+/* line 33, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-inactive {
   display: none;
 }
 @media (min-width: 600px) {
-  /* line 13, ../sass/partials/_module.scss */
+  /* line 26, ../sass/partials/_module.scss */
   .module-lineup figure section.lineup-field {
     width: 50%;
   }
-  /* line 27, ../sass/partials/_module.scss */
+  /* line 40, ../sass/partials/_module.scss */
   .module-lineup figure section.lineup-field.lineup-inactive {
     display: block;
   }
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-3 ul {
   width: 33.33333%;
   text-align: center;
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-4 ul {
   width: 25%;
   text-align: center;
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-5 ul {
   width: 20%;
   text-align: center;
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-6 ul {
   width: 16.66667%;
   text-align: center;
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-7 ul {
   width: 14.28571%;
   text-align: center;
 }
-/* line 34, ../sass/partials/_module.scss */
+/* line 47, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-8 ul {
   width: 12.5%;
   text-align: center;
 }
-/* line 42, ../sass/partials/_module.scss */
+/* line 55, ../sass/partials/_module.scss */
 .module-lineup figure #lineup-field-home {
   left: 0px;
 }
-/* line 45, ../sass/partials/_module.scss */
+/* line 58, ../sass/partials/_module.scss */
 .module-lineup figure #lineup-field-home ul {
   float: left;
 }
-/* line 49, ../sass/partials/_module.scss */
+/* line 62, ../sass/partials/_module.scss */
 .module-lineup figure #lineup-field-away {
   right: 0px;
 }
 @media (min-width: 600px) {
-  /* line 53, ../sass/partials/_module.scss */
-  .module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul > li {
+  /* line 66, ../sass/partials/_module.scss */
+  .module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul li a {
     float: right;
   }
 }
-/* line 60, ../sass/partials/_module.scss */
+/* line 73, ../sass/partials/_module.scss */
 .module-lineup figure ul {
   position: relative;
   top: 50%;
@@ -159,13 +175,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 70, ../sass/partials/_module.scss */
+/* line 83, ../sass/partials/_module.scss */
 .module-lineup figure ul li {
   text-align: center;
   margin: 5px 0;
   width: 100%;
 }
-/* line 75, ../sass/partials/_module.scss */
+/* line 89, ../sass/partials/_module.scss */
 .module-lineup figure ul li a {
   width: 30px;
   padding: 7px;
@@ -173,24 +189,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
   border-radius: 20px;
 }
-/* line 88, ../sass/partials/_module.scss */
+/* line 102, ../sass/partials/_module.scss */
 .module-lineup nav .lineup-inactive {
   background: #cccccc;
 }
-/* line 93, ../sass/partials/_module.scss */
+/* line 107, ../sass/partials/_module.scss */
 .module-lineup .lineup-table h3 {
   margin: 5px 0;
 }
 @media screen and (max-width: 600px) {
-  /* line 99, ../sass/partials/_module.scss */
+  /* line 113, ../sass/partials/_module.scss */
   .module-lineup .lineup-table.c4 {
     width: 100%;
   }
-  /* line 102, ../sass/partials/_module.scss */
+  /* line 116, ../sass/partials/_module.scss */
   .module-lineup .lineup-table.lineup-inactive {
     display: none;
   }
-  /* line 105, ../sass/partials/_module.scss */
+  /* line 119, ../sass/partials/_module.scss */
   .module-lineup .lineup-table.lineup-active {
     display: block;
   }

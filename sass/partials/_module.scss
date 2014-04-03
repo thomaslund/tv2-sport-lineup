@@ -1,3 +1,16 @@
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 .module-lineup{
 	font-family: 'flama', sans-serif;
 	padding: 30px;
@@ -50,7 +63,7 @@
 			right: 0px;
 
 			@media (min-width: 600px){
-				ul, ul > li{
+				ul, ul li a{
 					float: right;
 				}
 			}
@@ -71,6 +84,7 @@
 				text-align: center;
 				margin: 5px 0;
 				width: 100%;
+				@extend .clearfix;
 
 				a{
 					width: 30px;
