@@ -1,4 +1,4 @@
-.clearfix {
+%clearfix {
     zoom:1;
     &:before, &:after {
         content: "\0020";
@@ -13,33 +13,31 @@
 
 .module-lineup{
 	font-family: 'flama', sans-serif;
-	padding: 30px;
+	@extend %clearfix;
+
+	#lineup-away-table,
+	#lineup-field-away {
+		display: block;
+	}
 
 	figure{
 		position: relative;
 		background-color: green;
 
-		svg{
-			height: 300px; //temp before we haz svg
-		}
 
 		section.lineup-field{
 			position: absolute;
-			
+			width: 45%;
 			top: 0px;
 			height: 100%;
-			width: 100%;
+
 			
 			&.lineup-inactive{
 				display: none;
 			}
 
-			@media (min-width: 600px){
-				width: 50%;
-
-				&.lineup-inactive{
-					display: block;
-				}
+			&.lineup-inactive{
+				display: block;
 			}
 
 			@for $i from 3 through 8{
@@ -48,30 +46,26 @@
 					width: percentage(1/$i);
 					text-align: center;
 				}
-
 			}
-
 		}
-		#lineup-field-home{
-			left: 0px; 
 
-			ul{
-				float:left;
-			}
+		#lineup-field-home,
+		#lineup-field-away{
+			left: 5%;
 		}
 		#lineup-field-away{
-			right: 0px;
 
-			@media (min-width: 600px){
-				ul, ul li a{
-					float: right;
-				}
+			right: 5%;
+			left:inherit;
+
+			ul, ul li a{
+				float: right;
 			}
 		}
 
 
 		ul{
-			
+			float:left;
 			position: relative;
 			top: 50%;
 			bottom: 0;
@@ -82,16 +76,18 @@
 
 			li {
 				text-align: center;
-				margin: 15% 0;
+				margin: 1em 0;
 				width: 100%;
-				@extend .clearfix;
+				@extend %clearfix;
 
 				a{
-					width: 30px;
-					padding: 7px;
+					width: 2em;
+					padding: 0.5em;
 					display: block;
-					background-color: white;
-					border-radius: 20px;
+					color: #000;
+					background-color: #fff;
+					box-shadow: 2px 2px 0px rgba(0,0,0,1);
+
 				}	
 				
 			}
@@ -99,17 +95,115 @@
 
 	}
 
-	nav .lineup-inactive{
-		background: darken(#fff,20%);
-	}
+	nav {
+		@extend %clearfix;
 
-	.lineup-table{
-		h3{
-			margin: 5px 0;
+		button{
+			border: 0;
+			box-shadow: none;
+			background: transparent;
+			color: inherit;
+			text-align: left;
+			font-size: 1em;
+			
+			&:hover {
+				-webkit-transform: translate(0px, 0px);
+				margin:0;
+
+			}
+
+			@media (max-width: 600px){
+				&.lineup-inactive{
+					background-color: rgba(0,0,0,0.20);
+					border-bottom: 2px solid rgba(0,0,0,0.25);
+
+					&.lineup-home{
+						border-right: 2px solid rgba(0,0,0,0.25);
+					}
+					&.lineup-away{
+						border-left: 2px solid rgba(0,0,0,0.25);
+					}
+				}
+			}
+
+			h3{
+				font-weight: 900;
+				font-family: 'flama_semi_condensed', 'flama', sans-serif;
+			}
+
 		}
 	}
 
-	@media screen and (max-width: 600px){
+	.lineup-table{
+		padding: 0 0.75em;
+
+		caption{
+			margin: 5px 0;
+			padding: 0;
+			border: none;
+		}
+		.module-table{
+			//sportsdata override
+			margin: 0;
+			th, td{
+				padding: 0.5em 0;
+				img{
+					height: 1em;
+				}
+			}
+		}
+	}
+
+	//'responsive' rules
+	&.normal {
+		.lineup-field{
+			font-size: 20px;
+			ul li{
+				margin: 3.25em 0;
+			}
+		}
+	}
+
+	&.medium {
+		.lineup-field{
+			font-size: 16px;
+			ul li{
+				margin: 2.8em 0;
+			}
+		}
+	}
+
+	&.tiny,
+	&.narrow{
+		
+		&[data-lineup="lineup-home"] {
+
+			#lineup-home-table,
+			#lineup-field-home {
+				display: block;
+			}
+			#lineup-away-table,
+			#lineup-field-away {
+				display: none;
+			}
+		}
+		#lineup-field-away{
+			left: 5%;
+			
+			ul{
+				float: left;
+				li a{
+					float: none;
+				}
+			}
+		}
+		&[data-lineup="lineup-away"] {
+			#lineup-home-table,
+			#lineup-field-home {
+				display: none;
+			}
+		}
+
 		.lineup-table.c4{
 			width: 100%;
 		}
@@ -119,8 +213,16 @@
 		.lineup-table.lineup-active{
 			display:block;
 		}
-	}
-	
 
+		figure .lineup-field{
+			width: 95%;
+		}
+	}
+
+	&.tiny{
+		.lineup-field{
+			font-size: 10px;	
+		}
+	}
 
 }

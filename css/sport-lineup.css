@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,150 +24,141 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 /* line 1, ../sass/partials/_module.scss */
-.clearfix, .module-lineup figure ul li {
+.module-lineup, .module-lineup figure ul li, .module-lineup nav {
   zoom: 1;
 }
 /* line 3, ../sass/partials/_module.scss */
-.clearfix:before, .module-lineup figure ul li:before, .clearfix:after, .module-lineup figure ul li:after {
+.module-lineup:before, .module-lineup figure ul li:before, .module-lineup nav:before, .module-lineup:after, .module-lineup figure ul li:after, .module-lineup nav:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 9, ../sass/partials/_module.scss */
-.clearfix:after, .module-lineup figure ul li:after {
+.module-lineup:after, .module-lineup figure ul li:after, .module-lineup nav:after {
   clear: both;
 }
 
 /* line 14, ../sass/partials/_module.scss */
 .module-lineup {
-  font-family: "flama", sans-serif;
-  padding: 30px;
+  font-family: 'flama', sans-serif;
 }
-/* line 18, ../sass/partials/_module.scss */
+/* line 19, ../sass/partials/_module.scss */
+.module-lineup #lineup-away-table,
+.module-lineup #lineup-field-away {
+  display: block;
+}
+/* line 23, ../sass/partials/_module.scss */
 .module-lineup figure {
   position: relative;
   background-color: green;
 }
-/* line 22, ../sass/partials/_module.scss */
-.module-lineup figure svg {
-  height: 300px;
-}
-/* line 26, ../sass/partials/_module.scss */
+/* line 28, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field {
   position: absolute;
+  width: 45%;
   top: 0px;
   height: 100%;
-  width: 100%;
 }
-/* line 33, ../sass/partials/_module.scss */
+/* line 35, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-inactive {
   display: none;
 }
-@media (min-width: 600px) {
-  /* line 26, ../sass/partials/_module.scss */
-  .module-lineup figure section.lineup-field {
-    width: 50%;
-  }
-  /* line 40, ../sass/partials/_module.scss */
-  .module-lineup figure section.lineup-field.lineup-inactive {
-    display: block;
-  }
+/* line 39, ../sass/partials/_module.scss */
+.module-lineup figure section.lineup-field.lineup-inactive {
+  display: block;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-3 ul {
   width: 33.33333%;
   text-align: center;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-4 ul {
   width: 25%;
   text-align: center;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-5 ul {
   width: 20%;
   text-align: center;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-6 ul {
   width: 16.66667%;
   text-align: center;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-7 ul {
   width: 14.28571%;
   text-align: center;
 }
-/* line 47, ../sass/partials/_module.scss */
+/* line 45, ../sass/partials/_module.scss */
 .module-lineup figure section.lineup-field.lineup-rows-8 ul {
   width: 12.5%;
   text-align: center;
 }
-/* line 55, ../sass/partials/_module.scss */
-.module-lineup figure #lineup-field-home {
-  left: 0px;
-}
-/* line 58, ../sass/partials/_module.scss */
-.module-lineup figure #lineup-field-home ul {
-  float: left;
-}
-/* line 62, ../sass/partials/_module.scss */
+/* line 53, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-home,
 .module-lineup figure #lineup-field-away {
-  right: 0px;
+  left: 5%;
 }
-@media (min-width: 600px) {
-  /* line 66, ../sass/partials/_module.scss */
-  .module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul li a {
-    float: right;
-  }
+/* line 56, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-away {
+  right: 5%;
+  left: inherit;
 }
-/* line 73, ../sass/partials/_module.scss */
+/* line 61, ../sass/partials/_module.scss */
+.module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul li a {
+  float: right;
+}
+/* line 67, ../sass/partials/_module.scss */
 .module-lineup figure ul {
+  float: left;
   position: relative;
   top: 50%;
   bottom: 0;
@@ -175,39 +166,140 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 83, ../sass/partials/_module.scss */
+/* line 77, ../sass/partials/_module.scss */
 .module-lineup figure ul li {
   text-align: center;
-  margin: 15% 0;
+  margin: 1em 0;
   width: 100%;
 }
-/* line 89, ../sass/partials/_module.scss */
+/* line 83, ../sass/partials/_module.scss */
 .module-lineup figure ul li a {
-  width: 30px;
-  padding: 7px;
+  width: 2em;
+  padding: 0.5em;
   display: block;
-  background-color: white;
-  border-radius: 20px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 2px 2px 0px black;
 }
-/* line 102, ../sass/partials/_module.scss */
-.module-lineup nav .lineup-inactive {
-  background: #cccccc;
+/* line 101, ../sass/partials/_module.scss */
+.module-lineup nav button {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  font-size: 1em;
 }
-/* line 107, ../sass/partials/_module.scss */
-.module-lineup .lineup-table h3 {
-  margin: 5px 0;
+/* line 109, ../sass/partials/_module.scss */
+.module-lineup nav button:hover {
+  -webkit-transform: translate(0px, 0px);
+  margin: 0;
 }
-@media screen and (max-width: 600px) {
-  /* line 113, ../sass/partials/_module.scss */
-  .module-lineup .lineup-table.c4 {
-    width: 100%;
-  }
+@media (max-width: 600px) {
   /* line 116, ../sass/partials/_module.scss */
-  .module-lineup .lineup-table.lineup-inactive {
-    display: none;
+  .module-lineup nav button.lineup-inactive {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
   }
-  /* line 119, ../sass/partials/_module.scss */
-  .module-lineup .lineup-table.lineup-active {
-    display: block;
+  /* line 120, ../sass/partials/_module.scss */
+  .module-lineup nav button.lineup-inactive.lineup-home {
+    border-right: 2px solid rgba(0, 0, 0, 0.25);
   }
+  /* line 123, ../sass/partials/_module.scss */
+  .module-lineup nav button.lineup-inactive.lineup-away {
+    border-left: 2px solid rgba(0, 0, 0, 0.25);
+  }
+}
+/* line 129, ../sass/partials/_module.scss */
+.module-lineup nav button h3 {
+  font-weight: 900;
+  font-family: 'flama_semi_condensed', 'flama', sans-serif;
+}
+/* line 137, ../sass/partials/_module.scss */
+.module-lineup .lineup-table {
+  padding: 0 0.75em;
+}
+/* line 140, ../sass/partials/_module.scss */
+.module-lineup .lineup-table caption {
+  margin: 5px 0;
+  padding: 0;
+  border: none;
+}
+/* line 145, ../sass/partials/_module.scss */
+.module-lineup .lineup-table .module-table {
+  margin: 0;
+}
+/* line 148, ../sass/partials/_module.scss */
+.module-lineup .lineup-table .module-table th, .module-lineup .lineup-table .module-table td {
+  padding: 0.5em 0;
+}
+/* line 151, ../sass/partials/_module.scss */
+.module-lineup .lineup-table .module-table th img, .module-lineup .lineup-table .module-table td img {
+  height: 1em;
+}
+/* line 160, ../sass/partials/_module.scss */
+.module-lineup.normal .lineup-field {
+  font-size: 20px;
+}
+/* line 162, ../sass/partials/_module.scss */
+.module-lineup.normal .lineup-field ul li {
+  margin: 3.25em 0;
+}
+/* line 169, ../sass/partials/_module.scss */
+.module-lineup.medium .lineup-field {
+  font-size: 16px;
+}
+/* line 171, ../sass/partials/_module.scss */
+.module-lineup.medium .lineup-field ul li {
+  margin: 2.8em 0;
+}
+/* line 183, ../sass/partials/_module.scss */
+.module-lineup.tiny[data-lineup="lineup-home"] #lineup-home-table,
+.module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-home-table,
+.module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-home {
+  display: block;
+}
+/* line 187, ../sass/partials/_module.scss */
+.module-lineup.tiny[data-lineup="lineup-home"] #lineup-away-table,
+.module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-away, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-away-table,
+.module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-away {
+  display: none;
+}
+/* line 191, ../sass/partials/_module.scss */
+.module-lineup.tiny #lineup-field-away, .module-lineup.narrow #lineup-field-away {
+  left: 5%;
+}
+/* line 194, ../sass/partials/_module.scss */
+.module-lineup.tiny #lineup-field-away ul, .module-lineup.narrow #lineup-field-away ul {
+  float: left;
+}
+/* line 196, ../sass/partials/_module.scss */
+.module-lineup.tiny #lineup-field-away ul li a, .module-lineup.narrow #lineup-field-away ul li a {
+  float: none;
+}
+/* line 203, ../sass/partials/_module.scss */
+.module-lineup.tiny[data-lineup="lineup-away"] #lineup-home-table,
+.module-lineup.tiny[data-lineup="lineup-away"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-away"] #lineup-home-table,
+.module-lineup.narrow[data-lineup="lineup-away"] #lineup-field-home {
+  display: none;
+}
+/* line 208, ../sass/partials/_module.scss */
+.module-lineup.tiny .lineup-table.c4, .module-lineup.narrow .lineup-table.c4 {
+  width: 100%;
+}
+/* line 211, ../sass/partials/_module.scss */
+.module-lineup.tiny .lineup-table.lineup-inactive, .module-lineup.narrow .lineup-table.lineup-inactive {
+  display: none;
+}
+/* line 214, ../sass/partials/_module.scss */
+.module-lineup.tiny .lineup-table.lineup-active, .module-lineup.narrow .lineup-table.lineup-active {
+  display: block;
+}
+/* line 218, ../sass/partials/_module.scss */
+.module-lineup.tiny figure .lineup-field, .module-lineup.narrow figure .lineup-field {
+  width: 95%;
+}
+/* line 224, ../sass/partials/_module.scss */
+.module-lineup.tiny .lineup-field {
+  font-size: 10px;
 }

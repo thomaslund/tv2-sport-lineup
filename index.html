@@ -11,187 +11,291 @@
 </head>
 <body>
 		<section class="section">
-		 	<section class="module-lineup sportsdata-widget">
-				
-				<figure>
-					<svg role="img" aria-label="Match lineup">
-						<title>Match lineup</title>
-						<desc>Accessibility rules</desc>
+
+
+
+
+<!-- start module markup --> 
+
+		 	<section class="sportsdata-widget module-lineup" data-lineup="lineup-home" id="lineup">
+
+			 	<!-- TODO: make WAI-ARIA compatible for accessibility -->
 					
-					</svg>
+					<figure>
+						<img aria-label="Match lineup" title="Kampoppstilling" alt="Kampoppstilling" src="img/soccer-field.svg">
 
-					<section class="lineup-field lineup-active lineup-rows-4" id="lineup-field-home">
-						<ul>
-							<li><a href="#">1</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">4</a></li>
-							<li><a href="#">8</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">11</a></li>
-							<li><a href="#">15</a></li>
-						</ul>
-						<ul>
+						<section class=" lineup-field lineup-active lineup-rows-5" id="lineup-field-home">
+							<ul>
+								<li><a href="#">1</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">4</a></li>
+								<li><a href="#">8</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">11</a></li>
+								<li><a href="#">15</a></li>
+								
+							</ul>
+							<ul>
+								
+								<li><a href="#">9</a></li>
+								<li><a href="#">26</a></li>
+								<li><a href="#">26</a></li>
+								
+							</ul>
+							<ul>
+
+								<li><a href="#">5</a></li>
+							</ul>
+							<ul>
+
+								<li><a href="#">5</a></li>
+							</ul>
+						</section>
+
+						<section class="lineup-field lineup-inactive lineup-rows-8" id="lineup-field-away">
+							<ul>
+								<li><a href="#">1</a></li>
+							</ul>
+					
+							<ul>
+								<li><a href="#">8</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">12</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">12</a></li>
+								<li><a href="#">15</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">17</a></li>
+								<li><a href="#">2</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">19</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">12</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">12</a></li>
+								<li><a href="#">15</a></li>
+							</ul>
 							
-							<li><a href="#">9</a></li>
-							<li><a href="#">17</a></li>
-							<li><a href="#">2</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">10</a></li>
-							<li><a href="#">5</a></li>
-						</ul>
-					</section>
+						</section>
 
-					<section class="lineup-field lineup-inactive lineup-rows-8" id="lineup-field-away">
-						<ul>
-							<li><a href="#">1</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">4</a></li>
-							<li><a href="#">8</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">3</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">12</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">15</a></li>
-							<li><a href="#">9</a></li>
-						</ul>
+				 	</figure>
 
-						<ul>
-							<li><a href="#">17</a></li>
-							<li><a href="#">2</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">19</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">12</a></li>
-						</ul>
-						
-					</section>
+				 	<nav>
+				 		<button type="button" class="lineup-home c4 lineup-active" role="tab" id="lineup-home-tab">
+				 			<h3 class="t18">
+				 				Southampton
+				 			</h3>
+				 			<p>
+				 				Oppstilling: 5-3-1-1
+				 			</p>
+				 		</button>
+				 		<button type="button" class="lineup-away c4 lineup-inactive" role="tab" id="lineup-away-tab">
+				 			<h3 class="t18">
+				 				Manchester United
+				 			</h3>
+				 			<p>
+				 				Oppstilling: 2-1-2-2-1-1-2
+				 			</p>
+				 		</button>
+				 	</nav>
 
-			 	</figure>
+				 	<div class="lineup-table c4 lineup-active" id="lineup-home-table" role="tabpanel">
 
-			 	<nav>
-			 		<div class="lineup-home c4 lineup-active">
-			 			<h3>
-			 				Hjemmelag
-			 			</h3>
-			 			<p>
-			 				Oppstilling: 5-4-2
-			 			</p>
-			 		</div>
-			 		<div class="lineup-away c4 lineup-inactive">
-			 			<h3>
-			 				Bortelag
-			 			</h3>
-			 			<p>
-			 				Oppstilling: sær
-			 			</p>
-			 		</div>
-			 	</nav>
+				 		
+				 		<div class="module-table">
+						 	<table>
+						 		<caption>Lagoppstilling Southampton</caption>
+						 		<thead>
+							 		<tr>
+							 			<th>Nr</th>
+							 			<th>Spillernavn</th>
+							 			<th>Spillerdata</th>
+							 		</tr>	
+							 	</thead>
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg" height="1em"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort"  src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+						 		</tbody>
+						 	</table>
 
-			 	<div class="lineup-table c4 lineup-active" id="lineup-home-table">
+						 	
+						 	<table>
+							 	<caption>Benk Southampton</caption>
+						 		<thead>
+							 		<tr>
+							 			<th>Nr</th>
+							 			<th>Spillernavn</th>
+							 			<th>Spillerdata</th>
+							 		</tr>	
+							 	</thead>
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>	
+						 		</tbody>
+						 	</table>
 
-			 		<h3>Startrekke</h3>
-			 		<div class="module-table">
-					 	<table>
-					 		<thead>
-						 		<tr>
-						 			<th>Nr</th>
-						 			<th>Spillernavn</th>
-						 			<th>Spillerdata</th>
-						 		</tr>	
-						 	</thead>
-						 	<tbody>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-					 		</tbody>
-					 	</table>
+							 <h3>Trener Southampton</h3>
+							 <p>Navn Navnesen</p>
 
-					 	<h3> Innbytterbenk</h3>
-					 	<table>
-					 		<thead>
-						 		<tr>
-						 			<th>Nr</th>
-						 			<th>Spillernavn</th>
-						 			<th>Spillerdata</th>
-						 		</tr>	
-						 	</thead>
-						 	<tbody>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>	
-					 		</tbody>
-					 	</table>
-				 	</div>
-				</div>
+					 	</div>
+					</div>
 
 
-				<div class="lineup-table c4 lineup-inactive" id="lineup-away-table">
-					<h3>Startrekke</h3>
-			 		<div class="module-table">
-					 	<table>
-					 		<thead>
-						 		<tr>
-						 			<th>Nr</th>
-						 			<th>Spillernavn</th>
-						 			<th>Spillerdata</th>
-						 		</tr>	
-						 	</thead>
-						 	<tbody>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>
-					 		</tbody>
-					 	</table>
+					<div class="lineup-table c4 lineup-inactive" id="lineup-away-table" role="tabpanel">
+				 		<div class="module-table">
+						 	<table>
+						 		<caption>Lagoppstilling Manchester United</caption>
+						 		<thead>
+							 		<tr>
+							 			<th>Nr</th>
+							 			<th>Spillernavn</th>
+							 			<th>Spillerdata</th>
+							 		</tr>	
+							 	</thead>
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>2</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>11</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td>15</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+						 		</tbody>
+						 	</table>
 
-					 	<h3>Innbytterbenk</h3>
-					 	<table>
-					 		<thead>
-						 		<tr>
-						 			<th>Nr</th>
-						 			<th>Spillernavn</th>
-						 			<th>Spillerdata</th>
-						 		</tr>	
-						 	</thead>
-						 	<tbody>
-						 		<tr class="lineup-player">
-						 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card"></td>
-						 		</tr>	
-					 		</tbody>
-					 	</table>
-				 	</div>
+						 	<table>
+						 		<caption>Benk Manchester United</caption>
+						 		<thead>
+							 		<tr>
+							 			<th>Nr</th>
+							 			<th>Spillernavn</th>
+							 			<th>Spillerdata</th>
+							 		</tr>	
+							 	</thead>
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card" src="img/icon-yellow-card.svg"></td>
+							 		</tr>	
+						 		</tbody>
+						 	</table>
 
-				</div>
+
+						 	<h3>Trener Man United</h3>
+							 <p>Navn Navnesen</p>
+
+					 	</div>
+
+					</div>
 
 		  	</section>
+
+
+
+<!-- end module markup -->
+
+
+
+
 		</section>
-	
-	
+
+
+
+	<!-- //testing purposes -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function($){
+
+			function resizedw(){
+				//breakpoints
+				var module = $('.module-lineup'),
+					w = module.width(),
+					tiny = 390,
+					narrow = 600,
+					medium = 800,
+					normal = 930;
+
+				//set desired layout class
+				if (w < tiny) {
+					toggleLayoutClasses(module, 'tiny');
+				}
+				else if(w > tiny && w < narrow){
+					toggleLayoutClasses(module, 'narrow');
+				}
+				else if(w > narrow && w < medium){
+					toggleLayoutClasses(module, 'medium');
+				}
+				else if(w > medium){
+					toggleLayoutClasses(module, 'normal');
+				}
+				else {
+					console.log(w, ' is out of scope');
+					//error handle or fallback to magic tricks
+				}
+			}
+
+			/* simple function for toggling layout classes for jquery elem */
+			function toggleLayoutClasses(elem, cl){
+				var classes = ['tiny', 'narrow', 'medium', 'normal'];
+				for (var i = 0; i < classes.length; i++){
+					(classes[i]!= cl && elem.hasClass(classes[i]) ? elem.removeClass(classes[i]) : elem.addClass(cl));
+				}
+			}
+
+			//resize event throttler
+			var resizeThrottle;
+			window.onresize = function(){
+			  clearTimeout(resizeThrottle);
+			  resizeThrottle = setTimeout(resizedw, 200);
+			};
+
+			//init layout class
+			resizedw();
+
+
+
+			/* temp js for toggling lineupactive class and set data-lineup attribute  - TODO: move to backbone */
+			$('body').on('click', '.module-lineup button[role="tab"]', function(e){
+
+				var activeLineup = ($(this).attr('id') == 'lineup-home-tab' ? 'lineup-home' : 'lineup-away');
+
+				$(this).removeClass('lineup-inactive').siblings('button').addClass('lineup-inactive');
+
+				$(this).parents('.module-lineup').attr('data-lineup', activeLineup);
+
+			})
+			.on('click', '.module-lineup .lineup-field a', function(e){
+				e.preventDefault();
+				//trigger desired event to open player profile
+			});
+
+
+
+
+		})(jQuery);
+	</script
 </body>
 </html>
