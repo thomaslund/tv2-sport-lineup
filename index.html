@@ -19,32 +19,31 @@
 
 		 	<section class="sportsdata-widget module-lineup" data-lineup="lineup-home" id="lineup">
 
-			 	<!-- TODO: make WAI-ARIA compatible for accessibility -->
+			 	
 					
 					<figure>
+						<!-- TODO: make ARIA compatible for accessibility, figure should not be detected by screen readers, but still be tab-able -->
 						<img aria-label="Match lineup" title="Kampoppstilling" alt="Kampoppstilling" src="img/soccer-field.svg">
 
 						<section class=" lineup-field lineup-active lineup-rows-5" id="lineup-field-home">
 							<ul>
-								<li><a href="#">1</a></li>
+								<li role="presentation"><a title="Spillerlink" href="#">1</a></li>
 							</ul>
 							<ul>
-								<li><a href="#">4</a></li>
-								<li><a href="#">8</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">11</a></li>
-								<li><a href="#">15</a></li>
+								<li><a title="Spillerlink" href="#">4</a></li>
+								<li><a title="Spillerlink" href="#">8</a></li>
+								<li><a title="Spillerlink" href="#">3</a></li>
+								<li><a title="Spillerlink" href="#">11</a></li>
+								<li><a title="Spillerlink" href="#">15</a></li>
 								
 							</ul>
 							<ul>
-								
 								<li><a href="#">9</a></li>
 								<li><a href="#">26</a></li>
 								<li><a href="#">26</a></li>
 								
 							</ul>
 							<ul>
-
 								<li><a href="#">5</a></li>
 							</ul>
 							<ul>
@@ -91,7 +90,7 @@
 				 	<nav>
 				 		<button type="button" class="lineup-home c4 lineup-active" role="tab" id="lineup-home-tab">
 				 			<h3 class="t18">
-				 				Southampton
+				 				Southampton <!-- Should have short-names for 'tiny' layout (Man Utd) -->
 				 			</h3>
 				 			<p>
 				 				Oppstilling: 5-3-1-1
@@ -99,7 +98,7 @@
 				 		</button>
 				 		<button type="button" class="lineup-away c4 lineup-inactive" role="tab" id="lineup-away-tab">
 				 			<h3 class="t18">
-				 				Manchester United
+				 				Manchester United <!-- Should have short-names for 'tiny' layout (Man Utd) -->
 				 			</h3>
 				 			<p>
 				 				Oppstilling: 2-1-2-2-1-1-2
@@ -112,49 +111,56 @@
 				 		
 				 		<div class="module-table">
 						 	<table>
-						 		<caption>Lagoppstilling</caption>
 						 		<thead>
 							 		<tr>
-							 			<th>Nr</th>
-							 			<th>Spillernavn</th>
-							 			<th>Spillerdata</th>
+							 			<th colspan="3">Lagoppstilling</th>
 							 		</tr>	
-							 	</thead>
 							 	<tbody>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg" height="1em"></td>
+							 			<td class="shirt-number">1</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">2</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort"  src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">11</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">15</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 						 		</tbody>
 						 	</table>
 
-						 	
 						 	<table>
-							 	<caption>Innbyttere</caption>
 						 		<thead>
 							 		<tr>
-							 			<th>Nr</th>
-							 			<th>Spillernavn</th>
-							 			<th>Spillerdata</th>
+							 			<th colspan="3">Innbyttere</th>
 							 		</tr>	
 							 	</thead>
 							 	<tbody>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">1</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" class="icon-soccer-yellow-card" src="img/icon-yellow-card.svg"></td>
 							 		</tr>	
+							 		<tr class="lineup-player">
+							 			<td class="shirt-number">1</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td class="shirt-number">2</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
 						 		</tbody>
 						 	</table>
 
-							 <h3>Trener</h3>
-							 <p>Navn Navnesen</p>
+						 	<table>
+						 		<thead>
+							 		<tr>
+							 			<th>Trener</th>
+							 		</tr>	
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td><a href="#">Frank Honest</a></td>
+							 		</tr>	
+						 		</tbody>
+						 	</table>
 
 					 	</div>
 					</div>
@@ -163,50 +169,65 @@
 					<div class="lineup-table c4 lineup-inactive" id="lineup-away-table" role="tabpanel">
 				 		<div class="module-table">
 						 	<table>
-						 		<caption>Lagoppstilling</caption>
 						 		<thead>
 							 		<tr>
-							 			<th>Nr</th>
-							 			<th>Spillernavn</th>
-							 			<th>Spillerdata</th>
+							 			<th colspan="3">Lagoppstilling</th>
 							 		</tr>	
-							 	</thead>
 							 	<tbody>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">1</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>2</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">2</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>11</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">11</td><td><a href="#">Frank Honest</a><img alt="Kaptein" src="img/icon-captain.svg"></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>
 							 		<tr class="lineup-player">
-							 			<td>15</td><td>Frank Honest</td><td><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">15</td>
+							 			<td><a href="#">Frank Honest</a></td>
+							 			<td class="match-data">
+							 				<img alt="Gult kort" src="img/icon-yellow-card.svg">
+							 				2x<img alt="Mål" src="img/icon-goal.svg">
+							 			</td>
 							 		</tr>
 						 		</tbody>
 						 	</table>
 
 						 	<table>
-						 		<caption>Innbyttere</caption>
 						 		<thead>
 							 		<tr>
-							 			<th>Nr</th>
-							 			<th>Spillernavn</th>
-							 			<th>Spillerdata</th>
+							 			<th colspan="3">Innbyttere</th>
 							 		</tr>	
 							 	</thead>
 							 	<tbody>
 							 		<tr class="lineup-player">
-							 			<td>1</td><td>Frank Honest</td><td><img alt="Gult kort" class="icon-soccer-yellow-card" src="img/icon-yellow-card.svg"></td>
+							 			<td class="shirt-number">1</td>
+							 			<td><a href="#">Frank Honest</a></td>
+							 			<td class="match-data"><img alt="Gult kort" class="icon-soccer-yellow-card" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td class="shirt-number">11</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
+							 		</tr>
+							 		<tr class="lineup-player">
+							 			<td class="shirt-number">15</td><td><a href="#">Frank Honest</a></td><td class="match-data"><img alt="Gult kort" src="img/icon-yellow-card.svg"></td>
 							 		</tr>	
 						 		</tbody>
 						 	</table>
 
+						 	<table>
+						 		<thead>
+							 		<tr>
+							 			<th>Trener</th>
+							 		</tr>	
+							 	<tbody>
+							 		<tr class="lineup-player">
+							 			<td><a href="js">Frank Honest</a></td>
+							 		</tr>	
+						 		</tbody>
+						 	</table>
 
-						 	<h3>Trener</h3>
-							 <p>Navn Navnesen</p>
-
+						 
 					 	</div>
 
 					</div>
@@ -230,32 +251,35 @@
 		(function($){
 
 			function resizedw(){
-				//breakpoints
+				//breakpoints for module
 				var module = $('.module-lineup'),
 					w = module.width(),
-					tiny = 390,
-					narrow = 600,
-					medium = 800,
-					normal = 930;
+					options = {
+						tiny: 390,
+						narrow: 600,
+						medium: 800,
+						normal: 930
+					};
 
 				//set desired layout class
-				if (w < tiny) {
+				if (w < options.tiny) {
 					toggleLayoutClasses(module, 'tiny');
 				}
-				else if(w > tiny && w < narrow){
+				else if(w > options.tiny && w < options.narrow){
 					toggleLayoutClasses(module, 'narrow');
 				}
-				else if(w > narrow && w < medium){
+				else if(w > options.narrow && w < options.medium){
 					toggleLayoutClasses(module, 'medium');
 				}
-				else if(w > medium){
+				else if(w > options.medium){
 					toggleLayoutClasses(module, 'normal');
 				}
 				else {
-					console.log(w, ' is out of scope');
+					console.log(w, ' is out of scope for resizedw()');
 					//error handle or fallback to magic tricks
 				}
 			}
+
 
 			/* simple function for toggling layout classes for jquery elem */
 			function toggleLayoutClasses(elem, cl){
@@ -265,6 +289,7 @@
 				}
 			}
 
+
 			//resize event throttler
 			var resizeThrottle;
 			window.onresize = function(){
@@ -272,9 +297,9 @@
 			  resizeThrottle = setTimeout(resizedw, 200);
 			};
 
+
 			//init layout class
 			resizedw();
-
 
 
 			/* temp js for toggling lineupactive class and set data-lineup attribute  - TODO: move to backbone */
@@ -288,7 +313,7 @@
 
 			})
 			.on('click', '.module-lineup .lineup-field a', function(e){
-				e.preventDefault();
+				e.preventDefault(); //prevent URI change
 				//trigger desired event to open player profile
 			});
 
