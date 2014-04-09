@@ -2,71 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* line 1, ../sass/partials/_module.scss */
 .module-lineup, .module-lineup figure ul li, .module-lineup nav {
   zoom: 1;
@@ -180,7 +115,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 88, ../sass/partials/_module.scss */
 .module-lineup figure ul li a {
   width: 2em;
-  padding: 0.5em;
+  padding: 0.25em 0.5em;
   display: block;
   color: #000;
   background-color: #fff;
@@ -202,133 +137,137 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: translate(0px, 0px);
 }
 /* line 124, ../sass/partials/_module.scss */
+.module-lineup nav button p {
+  margin: 0;
+}
+/* line 128, ../sass/partials/_module.scss */
 .module-lineup nav button h3 {
   font-weight: 900;
   font-family: 'flama_semi_condensed', 'flama', sans-serif;
 }
-/* line 132, ../sass/partials/_module.scss */
+/* line 136, ../sass/partials/_module.scss */
 .module-lineup .lineup-table {
   padding: 0 0.75em;
 }
-/* line 135, ../sass/partials/_module.scss */
+/* line 139, ../sass/partials/_module.scss */
 .module-lineup .lineup-table caption {
   margin: 5px 0;
   padding: 0;
   border: none;
   font-weight: 400;
 }
-/* line 141, ../sass/partials/_module.scss */
+/* line 145, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table {
   margin: 0;
 }
-/* line 145, ../sass/partials/_module.scss */
+/* line 149, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table {
   margin: 15px 0;
 }
-/* line 148, ../sass/partials/_module.scss */
+/* line 152, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table th, .module-lineup .lineup-table .module-table table td {
   padding: 0.5em 0;
 }
-/* line 151, ../sass/partials/_module.scss */
+/* line 155, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table th img, .module-lineup .lineup-table .module-table table td img {
   height: 1em;
   vertical-align: middle;
   margin: 0 0.25em;
   line-height: 1em;
 }
-/* line 159, ../sass/partials/_module.scss */
+/* line 163, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table tr:first-child th {
   border-top: none;
   padding: 0.25em 0;
 }
-/* line 164, ../sass/partials/_module.scss */
+/* line 168, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table tr td.match-data {
   text-align: right;
 }
-/* line 167, ../sass/partials/_module.scss */
+/* line 171, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table tr td:first-child {
   width: 30px;
 }
-/* line 170, ../sass/partials/_module.scss */
+/* line 174, ../sass/partials/_module.scss */
 .module-lineup .lineup-table .module-table table tr td:first-child.shirt-number {
   font-weight: 700;
 }
-/* line 181, ../sass/partials/_module.scss */
+/* line 185, ../sass/partials/_module.scss */
 .module-lineup.normal .lineup-field {
   font-size: 20px;
 }
-/* line 183, ../sass/partials/_module.scss */
+/* line 187, ../sass/partials/_module.scss */
 .module-lineup.normal .lineup-field ul li {
   margin: 3.25em 0;
 }
-/* line 190, ../sass/partials/_module.scss */
+/* line 194, ../sass/partials/_module.scss */
 .module-lineup.medium .lineup-field {
   font-size: 16px;
 }
-/* line 192, ../sass/partials/_module.scss */
+/* line 196, ../sass/partials/_module.scss */
 .module-lineup.medium .lineup-field ul li {
   margin: 2.8em 0;
 }
-/* line 202, ../sass/partials/_module.scss */
+/* line 206, ../sass/partials/_module.scss */
 .module-lineup.tiny nav button.lineup-inactive, .module-lineup.narrow nav button.lineup-inactive {
   background-color: rgba(0, 0, 0, 0.2);
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
-/* line 209, ../sass/partials/_module.scss */
+/* line 213, ../sass/partials/_module.scss */
 .module-lineup.tiny nav button.lineup-inactive.lineup-home, .module-lineup.narrow nav button.lineup-inactive.lineup-home {
   border-right: 2px solid rgba(0, 0, 0, 0.25);
 }
-/* line 212, ../sass/partials/_module.scss */
+/* line 216, ../sass/partials/_module.scss */
 .module-lineup.tiny nav button.lineup-inactive.lineup-away, .module-lineup.narrow nav button.lineup-inactive.lineup-away {
   border-left: 2px solid rgba(0, 0, 0, 0.25);
 }
-/* line 221, ../sass/partials/_module.scss */
+/* line 225, ../sass/partials/_module.scss */
 .module-lineup.tiny[data-lineup="lineup-home"] #lineup-home-table,
 .module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-home-table,
 .module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-home {
   display: block;
 }
-/* line 225, ../sass/partials/_module.scss */
+/* line 229, ../sass/partials/_module.scss */
 .module-lineup.tiny[data-lineup="lineup-home"] #lineup-away-table,
 .module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-away, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-away-table,
 .module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-away {
   display: none;
 }
-/* line 230, ../sass/partials/_module.scss */
+/* line 234, ../sass/partials/_module.scss */
 .module-lineup.tiny #lineup-field-away, .module-lineup.narrow #lineup-field-away {
   left: 5%;
 }
-/* line 233, ../sass/partials/_module.scss */
+/* line 237, ../sass/partials/_module.scss */
 .module-lineup.tiny #lineup-field-away ul, .module-lineup.narrow #lineup-field-away ul {
   float: left;
 }
-/* line 235, ../sass/partials/_module.scss */
+/* line 239, ../sass/partials/_module.scss */
 .module-lineup.tiny #lineup-field-away ul li a, .module-lineup.narrow #lineup-field-away ul li a {
   float: none;
 }
-/* line 242, ../sass/partials/_module.scss */
+/* line 247, ../sass/partials/_module.scss */
 .module-lineup.tiny[data-lineup="lineup-away"] #lineup-home-table,
 .module-lineup.tiny[data-lineup="lineup-away"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-away"] #lineup-home-table,
 .module-lineup.narrow[data-lineup="lineup-away"] #lineup-field-home {
   display: none;
 }
-/* line 247, ../sass/partials/_module.scss */
+/* line 252, ../sass/partials/_module.scss */
 .module-lineup.tiny .lineup-table.c4, .module-lineup.narrow .lineup-table.c4 {
   width: 100%;
 }
-/* line 250, ../sass/partials/_module.scss */
+/* line 255, ../sass/partials/_module.scss */
 .module-lineup.tiny .lineup-table.lineup-inactive, .module-lineup.narrow .lineup-table.lineup-inactive {
   display: none;
 }
-/* line 253, ../sass/partials/_module.scss */
+/* line 258, ../sass/partials/_module.scss */
 .module-lineup.tiny .lineup-table.lineup-active, .module-lineup.narrow .lineup-table.lineup-active {
   display: block;
 }
-/* line 257, ../sass/partials/_module.scss */
+/* line 262, ../sass/partials/_module.scss */
 .module-lineup.tiny figure .lineup-field, .module-lineup.narrow figure .lineup-field {
   width: 95%;
 }
-/* line 263, ../sass/partials/_module.scss */
+/* line 268, ../sass/partials/_module.scss */
 .module-lineup.tiny .lineup-field {
   font-size: 10px;
 }

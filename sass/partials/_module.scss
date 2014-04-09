@@ -87,7 +87,7 @@
 
 				a{
 					width: 2em;
-					padding: 0.5em;
+					padding: 0.25em 0.5em;
 					display: block;
 					color: #000;
 					background-color: #fff;
@@ -119,6 +119,10 @@
 				-webkit-transform: translate(0px, 0px);
 				-ie-transform: translate(0px, 0px);
 				transform: translate(0px, 0px);
+			}
+			
+			p{
+				margin: 0;
 			}
 
 			h3{
