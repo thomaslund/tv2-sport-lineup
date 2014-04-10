@@ -28,8 +28,8 @@
   font-family: 'flama', sans-serif;
 }
 /* line 25, ../sass/partials/_module.scss */
-.module-lineup #lineup-away-table,
-.module-lineup #lineup-field-away {
+.module-lineup .lineup-away-table,
+.module-lineup .lineup-field-away {
   display: block;
 }
 /* line 29, ../sass/partials/_module.scss */
@@ -83,17 +83,17 @@
   text-align: center;
 }
 /* line 59, ../sass/partials/_module.scss */
-.module-lineup figure #lineup-field-home,
-.module-lineup figure #lineup-field-away {
+.module-lineup figure .lineup-field-home,
+.module-lineup figure .lineup-field-away {
   left: 5%;
 }
 /* line 62, ../sass/partials/_module.scss */
-.module-lineup figure #lineup-field-away {
+.module-lineup figure .lineup-field-away {
   right: 5%;
   left: inherit;
 }
 /* line 67, ../sass/partials/_module.scss */
-.module-lineup figure #lineup-field-away ul, .module-lineup figure #lineup-field-away ul li a {
+.module-lineup figure .lineup-field-away ul, .module-lineup figure .lineup-field-away ul li a {
   float: right;
 }
 /* line 72, ../sass/partials/_module.scss */
@@ -222,33 +222,33 @@
   border-left: 2px solid rgba(0, 0, 0, 0.25);
 }
 /* line 225, ../sass/partials/_module.scss */
-.module-lineup.tiny[data-lineup="lineup-home"] #lineup-home-table,
-.module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-home-table,
-.module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-home {
+.module-lineup.tiny[data-lineup="lineup-home"] .lineup-home-table,
+.module-lineup.tiny[data-lineup="lineup-home"] .lineup-field-home, .module-lineup.narrow[data-lineup="lineup-home"] .lineup-home-table,
+.module-lineup.narrow[data-lineup="lineup-home"] .lineup-field-home {
   display: block;
 }
 /* line 229, ../sass/partials/_module.scss */
-.module-lineup.tiny[data-lineup="lineup-home"] #lineup-away-table,
-.module-lineup.tiny[data-lineup="lineup-home"] #lineup-field-away, .module-lineup.narrow[data-lineup="lineup-home"] #lineup-away-table,
-.module-lineup.narrow[data-lineup="lineup-home"] #lineup-field-away {
+.module-lineup.tiny[data-lineup="lineup-home"] .lineup-away-table,
+.module-lineup.tiny[data-lineup="lineup-home"] .lineup-field-away, .module-lineup.narrow[data-lineup="lineup-home"] .lineup-away-table,
+.module-lineup.narrow[data-lineup="lineup-home"] .lineup-field-away {
   display: none;
 }
 /* line 234, ../sass/partials/_module.scss */
-.module-lineup.tiny #lineup-field-away, .module-lineup.narrow #lineup-field-away {
+.module-lineup.tiny .lineup-field-away, .module-lineup.narrow .lineup-field-away {
   left: 5%;
 }
 /* line 237, ../sass/partials/_module.scss */
-.module-lineup.tiny #lineup-field-away ul, .module-lineup.narrow #lineup-field-away ul {
+.module-lineup.tiny .lineup-field-away ul, .module-lineup.narrow .lineup-field-away ul {
   float: left;
 }
 /* line 239, ../sass/partials/_module.scss */
-.module-lineup.tiny #lineup-field-away ul li a, .module-lineup.narrow #lineup-field-away ul li a {
+.module-lineup.tiny .lineup-field-away ul li a, .module-lineup.narrow .lineup-field-away ul li a {
   float: none;
 }
 /* line 247, ../sass/partials/_module.scss */
-.module-lineup.tiny[data-lineup="lineup-away"] #lineup-home-table,
-.module-lineup.tiny[data-lineup="lineup-away"] #lineup-field-home, .module-lineup.narrow[data-lineup="lineup-away"] #lineup-home-table,
-.module-lineup.narrow[data-lineup="lineup-away"] #lineup-field-home {
+.module-lineup.tiny[data-lineup="lineup-away"] .lineup-home-table,
+.module-lineup.tiny[data-lineup="lineup-away"] .lineup-field-home, .module-lineup.narrow[data-lineup="lineup-away"] .lineup-home-table,
+.module-lineup.narrow[data-lineup="lineup-away"] .lineup-field-home {
   display: none;
 }
 /* line 252, ../sass/partials/_module.scss */

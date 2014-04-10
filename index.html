@@ -25,7 +25,7 @@
 						<!-- TODO: make ARIA compatible for accessibility, figure should not be detected by screen readers, but still be tab-able -->
 						<img aria-label="Match lineup" title="Kampoppstilling" alt="Kampoppstilling" src="img/soccer-field.svg">
 
-						<section class=" lineup-field lineup-active lineup-rows-5" id="lineup-field-home">
+						<section class=" lineup-field lineup-active lineup-rows-5 lineup-field-home">
 							<ul>
 								<li role="presentation"><a title="Spillerlink" href="#">1</a></li>
 							</ul>
@@ -52,7 +52,7 @@
 							</ul>
 						</section>
 
-						<section class="lineup-field lineup-inactive lineup-rows-8" id="lineup-field-away">
+						<section class="lineup-field lineup-inactive lineup-rows-8 lineup-field-away">
 							<ul>
 								<li><a href="#">1</a></li>
 							</ul>
@@ -88,7 +88,7 @@
 				 	</figure>
 
 				 	<nav>
-				 		<button type="button" class="lineup-home c4 lineup-active" role="tab" id="lineup-home-tab">
+				 		<button type="button" class="lineup-home c4 lineup-active lineup-home-tab" role="tab">
 				 			<h3 class="t18">
 				 				Southampton <!-- Should have short-names for 'tiny' layout (Man Utd) -->
 				 			</h3>
@@ -96,7 +96,7 @@
 				 				Oppstilling: 5-3-1-1
 				 			</p>
 				 		</button>
-				 		<button type="button" class="lineup-away c4 lineup-inactive" role="tab" id="lineup-away-tab">
+				 		<button type="button" class="lineup-away c4 lineup-inactive lineup-away-tab" role="tab">
 				 			<h3 class="t18">
 				 				Manchester United <!-- Should have short-names for 'tiny' layout (Man Utd) -->
 				 			</h3>
@@ -106,7 +106,7 @@
 				 		</button>
 				 	</nav>
 
-				 	<div class="lineup-table c4 lineup-active" id="lineup-home-table" role="tabpanel">
+				 	<div class="lineup-table c4 lineup-active lineup-home-table" role="tabpanel">
 
 				 		
 				 		<div class="module-table">
@@ -166,7 +166,7 @@
 					</div>
 
 
-					<div class="lineup-table c4 lineup-inactive" id="lineup-away-table" role="tabpanel">
+					<div class="lineup-table c4 lineup-inactive lineup-away-table" role="tabpanel">
 				 		<div class="module-table">
 						 	<table>
 						 		<thead>
@@ -305,7 +305,7 @@
 			/* temp js for toggling lineupactive class and set data-lineup attribute  - TODO: move to backbone */
 			$('body').on('click', '.module-lineup button[role="tab"]', function(e){
 
-				var activeLineup = ($(this).attr('id') == 'lineup-home-tab' ? 'lineup-home' : 'lineup-away');
+				var activeLineup = ($(this).hasClass('lineup-home-tab') ? 'lineup-home' : 'lineup-away');
 
 				$(this).removeClass('lineup-inactive').siblings('button').addClass('lineup-inactive');
 

@@ -21,8 +21,8 @@
 	font-family: 'flama', sans-serif;
 	@extend %clearfix;
 
-	#lineup-away-table,
-	#lineup-field-away {
+	.lineup-away-table,
+	.lineup-field-away {
 		display: block;
 	}
 
@@ -55,11 +55,11 @@
 			}
 		}
 
-		#lineup-field-home,
-		#lineup-field-away{
+		.lineup-field-home,
+		.lineup-field-away{
 			left: 5%;
 		}
-		#lineup-field-away{
+		.lineup-field-away{
 
 			right: 5%;
 			left:inherit;
@@ -221,17 +221,17 @@
 
 		&[data-lineup="lineup-home"] {
 
-			#lineup-home-table,
-			#lineup-field-home {
+			.lineup-home-table,
+			.lineup-field-home {
 				display: block;
 			}
-			#lineup-away-table,
-			#lineup-field-away {
+			.lineup-away-table,
+			.lineup-field-away {
 				display: none;
 			}
 		}
 
-		#lineup-field-away{
+		.lineup-field-away{
 			left: 5%;
 			
 			ul{
@@ -243,8 +243,8 @@
 		}
 		
 		&[data-lineup="lineup-away"] {
-			#lineup-home-table,
-			#lineup-field-home {
+			.lineup-home-table,
+			.lineup-field-home {
 				display: none;
 			}
 		}
