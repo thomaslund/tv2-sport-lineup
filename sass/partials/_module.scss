@@ -54,7 +54,21 @@
 				}
 			}
 		}
+		.lineup-field-home{
 
+			-webkit-transform: rotateX(180deg);
+			-ms-transform: rotateX(180deg);
+			transform: rotateX(180deg);
+			
+			ul li{
+				-webkit-transform: rotateX(-180deg);
+				-ms-transform: rotateX(-180deg);
+				transform: rotateX(-180deg);
+			}
+
+
+		
+		}
 		.lineup-field-home,
 		.lineup-field-away{
 			left: 5%;
@@ -256,7 +270,7 @@
 
 	&.tiny{
 		.lineup-field{
-			font-size: 10px;	
+			font-size: 12px;	
 		}
 	}
 
