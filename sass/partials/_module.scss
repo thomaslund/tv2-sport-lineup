@@ -231,18 +231,7 @@
 				display: none;
 			}
 		}
-
-		.lineup-field-away{
-			left: 5%;
-			
-			ul{
-				float: left;
-				li a{
-					float: none;
-				}
-			}
-		}
-		
+	
 		&[data-lineup="lineup-away"] {
 			.lineup-home-table,
 			.lineup-field-home {
