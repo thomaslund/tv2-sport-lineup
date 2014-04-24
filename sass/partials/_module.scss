@@ -75,6 +75,8 @@
 			top: 50%;
 			bottom: 0;
 			padding:0; //override bootstrap
+			list-style: none;
+
 
 			-webkit-transform: translateY(-50%);
 			-moz-transform: translateY(-50%);
@@ -84,6 +86,7 @@
 				text-align: center;
 				margin: 1em 0;
 				width: 100%;
+				list-style: none;
 				@extend %clearfix;
 
 				a{
